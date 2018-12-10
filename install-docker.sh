@@ -14,9 +14,9 @@ echo "{
 
 curl -L https://get.daocloud.io/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose;
 chmod +x /usr/local/bin/docker-compose;
-curl -o webserver-dir-structure.zip https://codeload.github.com/myriver/webserver-dir-structure/zip/master;
+curl -o docker-lnmp.zip https://codeload.github.com/myriver/docker-lnmp/zip/master;
 yum install -y unzip;
-unzip   webserver-dir-structure.zip;
-rm -f   webserver-dir-structure.zip;
-mv      webserver-dir-structure-master /data;  
+unzip   docker-lnmp.zip;
+rm -f   docker-lnmp.zip;
+mv      docker-lnmp /data;  
 reboot;
