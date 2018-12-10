@@ -18,5 +18,5 @@ curl -o docker-lnmp.zip https://codeload.github.com/myriver/docker-lnmp/zip/mast
 yum install -y unzip;
 unzip   docker-lnmp.zip;
 rm -f   docker-lnmp.zip;
-mv      docker-lnmp /data;  
+mv      docker-lnmp-master /data;  
 reboot;
