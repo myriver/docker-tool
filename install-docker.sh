@@ -2,7 +2,7 @@ rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org;
 rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm;
 yum install -y yum-plugin-fastestmirror;
 yum update -y nss curl libcurl;
-yum -y --enablerepo=elrepo-kernel install kernel-ml;
+yum -y --enablerepo=elrepo-kernel install kernel-lt;
 grub2-set-default 0;
 curl -sSL https://get.daocloud.io/docker | sh;
 echo "dockremap:165536:65536" >/etc/subuid;
