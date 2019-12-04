@@ -19,5 +19,13 @@ curl -o docker-lnmp.zip https://codeload.github.com/myriver/docker-lnmp/zip/mast
 yum install -y unzip;
 unzip   docker-lnmp.zip;
 rm -f   docker-lnmp.zip;
-mv      docker-lnmp-master /data;  
+if [ ! -d "/data" ]; then
+mkdir /data
+fi
+mv docker-lnmp-master/* /data;
+chown 166536:166536 /data/Docker/soft/nginx/log
+chown 166536:166536 /data/Docker/soft/php/php7/log
+chown 166536:166536 /data/Docker/soft/php/php7.2/log
+chown 166536:166536 /data/Docker/soft/mysql/mysql5.7/log
+chown 166536:166536 /data/Docker/soft/mysql/mysql5.7/data
 reboot;
