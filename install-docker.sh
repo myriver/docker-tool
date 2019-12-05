@@ -27,5 +27,5 @@ chown 166535:166535 /data/Docker/soft/nginx/log
 chown 166535:166535 /data/Docker/soft/php/php7/log
 chown 166535:166535 /data/Docker/soft/php/php7.2/log
 chown 166535:166535 /data/Docker/soft/mysql/mysql5.7/log
-chown 166535:166535 /data/Docker/soft/mysql/mysql5.7/data
+chown 166535:166535 /data/Docker/soft/mysql/mysql5.7/data -R
 reboot;
